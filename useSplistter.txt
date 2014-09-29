@@ -1,0 +1,25 @@
+public Taxonomies processBySplitter() throws JAXBException, ParserConfigurationException, IOException, SAXException {
+
+        JAXBContext jaxbcontext = JAXBContext.newInstance(Taxonomies.class);
+        System.out.println("JAXB Context is=" + jaxbcontext.toString());
+        Unmarshaller unmarshaller = jaxbcontext.createUnmarshaller();
+
+        // create a new XML parser
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        factory.setNamespaceAware(true);
+        XMLReader reader = factory.newSAXParser().getXMLReader();
+
+        // prepare a Splitter
+        Splitter splitter = new Splitter(jaxbcontext);
+
+        // connect two components
+        reader.setContentHandler(splitter);
+
+        // parse all the documents specified via the command line.
+        // note that XMLReader expects an URL, not a file name.
+        // so we need conversion.
+        reader.parse(new File(".\\taxonomy2.xml").toURL().toExternalForm());
+
+        return null;
+
+    }

@@ -1,0 +1,5 @@
+com\sarm\Travelogue\process\DestinationProcessorTest.class
+com\sarm\Travelogue\process\DestinationProcessorRegressorTest.class
+com\sarm\Travelogue\process\LPUnMarshallerTest.class
+com\sarm\Travelogue\common\PostMarshalUtilitiesTest.class
+com\sarm\Travelogue\process\TaxonomyProcessorTest.class

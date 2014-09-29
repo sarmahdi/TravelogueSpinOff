@@ -1,0 +1,1 @@
+java -jar Travelogue-1.0-SNAPSHOT-jar-with-dependencies.jar C:\JavaProjects\GitSVNRepo\Travelogue\taxonomy.xml C:\JavaProjects\GitSVNRepo\Travelogue\destinations.xml C:\JavaProjects\GitSVNRepo\Travelogue\newHtml\
