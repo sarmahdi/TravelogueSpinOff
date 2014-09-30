@@ -1,5 +1,12 @@
+Project Name:		Travelogue
+Status:			InComplete
+Notes			This is a Batch process application and should be run through command line.
+Frameworks:		Java, JAXB, MOXy, JUnit, . 
+IDE:			NetBeans IDE
+Application Servers	N/A
+JDK:			Java 7
+
 (This is a Spin off of the original and simpler Travelogue project. This project will use SPring Batch to create a Batch process and in further enhancement use a MYSQL backend and a form with AngularJS components to show the destination, In order to complete that the static html creation feature will be replaced by a JSP and a Spring REST controller)
-Status: Incomplete.
 
 This is he Travelogue destination Information creation. It generates static html files for each location in their destination list and contains different information for that location from the perspective of a traveller of what to expect and how to travel to that region. Some locations have more informations than the other.
 
